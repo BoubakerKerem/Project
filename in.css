@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: 'Tw Cen MT', sans-serif;
+}
+.container {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	padding: 0 8%;
+}
+body
+{
+overflow-x:hidden;
+font-family:'PT Sans', sans-serif;
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(https://cdn.planeandpilotmag.com/2022/06/air-traffic-control-tower-night.jpg);
+
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px 0;
+}
+
+nav .logo {
+	width: 120px;
+	cursor: pointer;
+}
+
+nav .cart {
+	width: 40px;
+	cursor: pointer;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	padding-right: 40px;
+	text-align: right;
+	list-style-type: none;
+}
+
+ul li {
+	margin-right: 10px;
+}
+
+ul li a {
+	position: relative;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+ul li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	transform: translateX(-50%) translateY(-5px);
+	height: 3px;
+	background: #ffa400;
+	transition: 0.3s;
+}
+
+ul li a:hover::after {
+	width: 38%;
+}
+
+
+.section-container
+{
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+background-color: transparent;
+}
+.section-container .columns
+{
+flex:0 0 auto;
+width:45%;
+}
+.section-container .columns.image
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+.section-container .columns.content .content-container
+{
+padding:40px 80px;
+}
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:20px;
+margin: auto;
+padding: 10px;
+width: 60%;
+}
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+margin: auto;
+padding: 10px;
+width: 60%;
+}
+
+@media screen and (max-width:767px)
+{
+.section-container
+{
+flex-flow:row wrap;
+}
+.section-container .columns.image{
+display:block;
+order:1;
+width:150px;
+height:250px;
+}
+.section-container .columns.content
+{
+display:block;
+order:2;
+width:100%;
+}
+.section-container .columns.content .content-container
+{
+padding:20px 35px;
+}
+.section-container .columns.content .content-container h5
+{
+margin-bottom:5px;
+}
+
+}
