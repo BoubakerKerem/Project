@@ -4,7 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+	outline: none;
+	font-family: 'Tw Cen MT', sans-serif;
 }
+.container {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	padding: 0 8%;
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -50,13 +59,24 @@ ul li a::after {
 	width: 0;
 	transform: translateX(-50%) translateY(-5px);
 	height: 3px;
-	background: #ffa400;
+	background: red;
 	transition: 0.3s;
 }
 
 ul li a:hover::after {
 	width: 38%;
 }
+.site-container {
+	position: absolute;
+	bottom: 10%;
+	color: #fff;
+}
+
+.site-container p {
+	font-size: 50px;
+	font-weight: bold;
+}
+
 body{
   background-image: url(sv.jpg);
   font-family: 'Josefin Sans', sans-serif;
@@ -68,11 +88,21 @@ body{
 }
 
 .wrapper h1{
-  font-family: 'Allura', cursive;
-  font-size: 52px;
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
+
+    font-size: 52px;
+    text-align: center;
+    line-height: 120px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url('ptt.png');
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    animation: animate 20s linear 2s infinite alternate ;
+    
+
+  
 }
 
 .team{
@@ -95,7 +125,7 @@ body{
 }
 
 .team .team_member h3{
-  color: #81c644;
+  color: red;
   font-size: 26px;
   margin-top: 50px;
 }

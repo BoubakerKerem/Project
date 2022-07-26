@@ -63,7 +63,7 @@ ul li a::after {
 	width: 0;
 	transform: translateX(-50%) translateY(-5px);
 	height: 3px;
-	background: #ffa400;
+	background: red;
 	transition: 0.3s;
 }
 
@@ -165,3 +165,6 @@ ul li a:hover::after {
 	animation: animate 20s linear 2s infinite alternate;
 	
 }
+hr {
+	border: 1px solid red;
+  }
